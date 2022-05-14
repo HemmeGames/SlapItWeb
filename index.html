@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | Slapit</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" style="height:95vh; width:95vw; background: #231F20"></canvas>
-    <script src="Build/5_02_22_13_30.loader.js"></script>
+    <canvas id="unity-canvas" width=1440 height=900 style="width: 1440px; height: 900px; background: #231F20"></canvas>
+    <script src="Build/WebGL.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,13 +18,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/5_02_22_13_30.data",
-        frameworkUrl: "Build/5_02_22_13_30.framework.js",
-        codeUrl: "Build/5_02_22_13_30.wasm",
+        dataUrl: "Build/WebGL.data",
+        frameworkUrl: "Build/WebGL.framework.js",
+        codeUrl: "Build/WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Hemme",
         productName: "Slapit",
-        productVersion: "1.0",
+        productVersion: "0.0.18",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
