@@ -1,3 +1,0 @@
-# SlapItWeb
-
-Check gh-pages
